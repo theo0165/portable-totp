@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portable TOTP</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="app">
+        <div class="half_width left" onsubmit="event.preventDefault(); formSubmit();">
+            <form id="inputForm">
+                <input type="text" name="secret" id="secretInput" placeholder="Secret key (base32)">
+                <input type="submit" value="Save!">
+            </form>
+        </div>
+        <div class="half_width right">
+            <!--
+                Current token (copy)
+                Time until refresh
+                Clear
+            -->
+
+            <div id="current">
+                <div class="currentTitl">Token:</div>
+                <div id="token">000 000</div>
+            </div>
+            <div id="refresh">
+                Changes in <span id="refreshTime">X</span> seconds
+            </div>
+            <div id="clear">
+                <button id="clearBtn" onclick="clearAll();">Clear</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./scripts/index.js"></script>
+</html>

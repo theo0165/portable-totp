@@ -1,0 +1,16 @@
+{
+  "name": "portable-totp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^4.0.0",
+    "notp": "^2.0.3",
+    "thirty-two": "^1.0.2"
+  }
+}
