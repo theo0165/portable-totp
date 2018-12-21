@@ -1,18 +1,4 @@
 const notp = require('notp');
-const base32 = require('thirty-two');
-
-/*
-var key = "1234567890";
-var token = "321";
-
-var totp = notp.totp.gen(key);
-console.log(totp);
-
-setInterval(()=>{
-    var totp = notp.totp.gen(key);
-    console.log(totp);
-}, 1000 * 5)
-*/
 
 var currentTimeout;
 var refreshInterval;

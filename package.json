@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "electron": "^4.0.0",
-    "notp": "^2.0.3",
-    "thirty-two": "^1.0.2"
+    "notp": "^2.0.3"
   }
 }
